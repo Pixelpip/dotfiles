@@ -1,0 +1,3 @@
+first sway(config) file contains the sway WM config , paste it to .config/sway/config directory then press mod+c+shift 
+second waybar_config direcotry contains the waybar config paste it to .config/waybar/config then press mod+c+shift 
+font i used is JetBrainsMono, to use just edit the waybar config (style.css) *{ } css element  
