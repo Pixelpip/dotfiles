@@ -6,7 +6,7 @@
 * xev (keymapping)
 * pavucontrol (mic and audio management)
 * jetbrains-mono-fonts 
-* nitrogen(wallpapers)
+* nitrogen(wallpapers)(still not fgured out why wallpapers keep goign to default on boot)
 
 # settings changes
 
