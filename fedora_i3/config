@@ -8,6 +8,10 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#
+#nitrgoen wallpapers
+exec nitrogen --restore
+##
 
 set $mod Mod4
 
@@ -209,3 +213,10 @@ bar {
   }
   status_command i3status
 }
+
+#
+#multi-monitor setup 
+set $mext HDMI-A-0
+workspace 5 output $mext
+workspace 6 output $mext
+workspace 7 output $mext 
