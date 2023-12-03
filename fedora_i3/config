@@ -225,3 +225,14 @@ set $mext HDMI-A-0
 workspace 5 output $mext
 workspace 6 output $mext
 workspace 7 output $mext 
+
+
+
+
+##
+#screnshot 
+bindsym $mod+p exec grim
+#snipping 
+bindsym $mod+Shift+p exec grim -g "$(slurp)"
+##
+
