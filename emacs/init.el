@@ -1,13 +1,10 @@
 ;;for themes 
 (load-theme 'timu-macos t)
 
-;;for loading emacs at fullscreen on start
-(add-to-list 'initial-frame-alist '(fullscreen . maximized))
-
 ;;for loading fonts
 ;; Set JetBrains Mono font for default and specific modes
-(set-face-attribute 'default nil :font "JetBrains Mono" :height 120)
-(set-face-attribute 'variable-pitch nil :font "JetBrains Mono") ; If you're using variable-pitch mode
+(set-face-attribute 'default nil :font "JetBrains Mono-14" :weight 'normal)
+(set-face-attribute 'variable-pitch nil :font "JetBrains Mono-14") ; If you're using variable-pitch mode
 
 ;;for displaying line number and relative line numbers
 ;; Enable line numbers
@@ -20,24 +17,34 @@
 (menu-bar-mode -1)
 ;;disabling the tool bar(bar with icons)
 (tool-bar-mode -1)
+; Set default tab width
+(setq-default tab-width 2)
+;;disable scroll bar
+(scroll-bar-mode -1)
+
+;;C programming setup
+(setq c-default-style "linux"
+			c-basic-offset 4)
+;;electric pair mode for emacs
+(electric-pair-mode 1)
+
+
 
 
 ;;melpa package manager
 (require 'package)
-;;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
 ;; and `package-pinned-packages`. Most users will not need or want to do this.
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default))
- '(package-selected-packages
-   '(spacemacs-theme js2-mode web-mode emmet-mode timu-macos-theme timu-spacegrey-theme monokai-theme dracula-theme nerd-icons neotree)))
+ '(package-selected-packages '(dired-toggle-sudo timu-macos-theme doom-themes)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -46,34 +53,6 @@
  )
 
 
-;;web-mode configuration
-;; Associate file extensions with web-mode
-(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.js?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.php?\\'" . web-mode))
 
 
-
-;; Configure web-mode for specific behaviors
-(defun my-web-mode-hook ()
-  ;; Indentation settings
-  (setq web-mode-markup-indent-offset 2) ; Indentation for HTML
-  (setq web-mode-css-indent-offset 2)    ; Indentation for CSS
-  (setq web-mode-code-indent-offset 2)   ; Indentation for JavaScript/PHP
-  (setq web-mode-script-padding 2)       ; Indentation within script tags
-  (setq web-mode-style-padding 2)        ; Indentation within style tags
-  (setq web-mode-enable-current-element-highlight t) ; Highlight current HTML element
-  (setq web-mode-enable-current-column-highlight t)  ; Highlight current column
-  (setq web-mode-enable-auto-pairing t)             ; Enable auto-pairing of tags
-  (setq web-mode-enable-css-colorization t))        ; Enable colorization of CSS colors
-
-(add-hook 'web-mode-hook 'my-web-mode-hook)
-
-;; Enable electric-pair-mode for auto-closing pairs
-(electric-pair-mode t)
-
-;; Other settings (optional)
-(setq-default tab-width 2)       ; Set default tab width
-(setq-default indent-tabs-mode nil) ; Use spaces instead of tabs for indentation
 
