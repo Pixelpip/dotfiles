@@ -1,0 +1,25 @@
+Refer to "just a guy linux" video sway+debian video 4 for packages 
+Video 3 for network manager applet 
+
+
+Important packages 
+
+-- brightnessctl 
+-- pipewire 
+-- network-manager-gnome and other watch video 4 
+-- grim slurp 
+-- jetbrains mono font , fonts awesome 
+-- pauvcontrol , pulseaudio-utils 
+-- old sway+waybar(debian) config files for keymapping(brightness, etc )
+-- lxappearance(otherwise nwg-look from github)
+-- wofi , waybar
+-- network manager may conflict with systemd network(not sure)
+       
+       sudo systemctl stop NetworkManager
+       sudo systemctl disable --now wpa_supplicant
+       sudo systemctl restart NetworkManager
+
+       try these commands might work (ref: https://wiki.debian.org/NetworkManager/iwd)
+
+
+-- waybar style.css from previous config 

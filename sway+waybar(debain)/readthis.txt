@@ -1,0 +1,16 @@
+menu is dmenu
+brightness is brightnessctl 
+audio is pulseaudio(pulseaudio-utils) and pipewire
+screenshots slurp and grim 
+top bar is waybar 
+default file path for sway config is /etc/sway/config 
+default file path for waybar is /etc/xdg/waybar/config
+to make home directory folders like downloads, docs etc use command "xdg-user-dirs-update"
+
+
+
+
+
+
+
+for dark mode use lxappearance and debain package "gnome-themes-extra-data"
