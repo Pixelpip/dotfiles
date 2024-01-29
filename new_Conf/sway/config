@@ -33,9 +33,9 @@ output eDP-1 {
    pos 0,0
 }
 #
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s 5%+
+bindsym $mod+i exec --no-startup-id brightnessctl s 5%+
 #windows plus i for brightness plus 
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
+bindsym $mod+o exec --no-startup-id brightnessctl s 5%-
 #windows plus o for brughtness minus 
 #volume configuration
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
