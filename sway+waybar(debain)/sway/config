@@ -1,11 +1,15 @@
-##Default config for sway
+# Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
 
 ### Variables
+font pango:JetBrainsMono Regular 12
 #
+default_border pixel 2
+gaps inner 6
+gaps outer 6 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -18,30 +22,29 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu wofi -I --show drun | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#
-output * bg /home/pc480/.config/sway/wall.jpeg fill
-#
-#laptop display rf rate 
+#display 
 output eDP-1 {
    mode 1920x1080@60.007Hz
    pos 0,0
 }
 #
-bindsym $mod+i exec --no-startup-id brightnessctl s 5%+  
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s 5%+
 #windows plus i for brightness plus 
-bindsym $mod+o exec --no-startup-id brightnessctl s 5%-
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
 #windows plus o for brughtness minus 
 #volume configuration
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+#
+
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * background /home/pc480/.config/sway/wall.jpeg fill 
 #
 # Example configuration:
 #
@@ -63,13 +66,15 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
-   input "type:touchpad" {
+#touchpad
+
+input "type:touchpad" {
        dwt enabled
        tap enabled
        natural_scroll enabled
        middle_emulation enabled
    }
-#
+##
 # Example configuration:
 #
 #   input "2:14:SynPS/2_Synaptics_TouchPad" {
@@ -222,14 +227,32 @@ bindsym $mod+r mode "resize"
 
 #
 # Status Bar:
-   bar { 
-      swaybar_command waybar
-   }
-
-#screenshot config 
-bindsym $mod+p exec grim
-#snipping
-bindsym $mod+Shift+p exec grim -g "$(slurp)"
-
 #
+# Read `man 5 sway-bar` for more information about this section.
+# Your existing configuration...
+
+# Your main bar configuration
+bar {
+    swaybar_command waybar
+}
+
+#screnshot 
+bindsym $mod+p exec grim
+#snipping 
+bindsym $mod+Shift+p exec grim -g "$(slurp)"
+#
+
 include /etc/sway/config.d/*
+
+##
+#auth polkit
+exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 
+
+#notif
+exec mako
+
+#network applet
+exec_always nm-applet --indicator 
+
+#gtk app prob solv
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY WAYSOCK
