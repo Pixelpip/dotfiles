@@ -22,7 +22,7 @@
 #workspaces button.active {
   color: #fa5aa4;
 }
-
+#idle_inhibitor,
 #custom-powermenu,
 #cpu,
 #temperature,
@@ -34,9 +34,10 @@
 #custom-updates,
 #network,
 #battery,
+#backlight,
 #tray {
   padding: 4px 8px;
-  background-color: #303643;
+  background-color: #000000;
   border-radius: 30px;
   margin: 6px 4px;
 }
@@ -44,7 +45,9 @@
 #window {
   color: #929db1;
 }
-
+#backlight{
+  color:#FF8080;
+}
 #tray {
   margin-left: 4px;
 }
@@ -55,7 +58,9 @@
 #custom-updates {
   color: #1788e4;
 }
-
+#idle_inhibitor{
+  color:#F8E559;
+}
 #custom-powermenu {
   color: #e06c75;
   padding-right: 11px;
