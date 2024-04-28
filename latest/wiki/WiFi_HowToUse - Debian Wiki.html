@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://wiki.debian.org/htdocs/favicon.ico">
+<script type="text/javascript" src="WiFi_HowToUse%20-%20Debian%20Wiki_files/bugstatus.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,nofollow">
+
+<title>WiFi/HowToUse - Debian Wiki</title>
+<script type="text/javascript" src="WiFi_HowToUse%20-%20Debian%20Wiki_files/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="WiFi_HowToUse%20-%20Debian%20Wiki_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="WiFi_HowToUse%20-%20Debian%20Wiki_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="WiFi_HowToUse%20-%20Debian%20Wiki_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="WiFi_HowToUse%20-%20Debian%20Wiki_files/projection.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="WiFi_HowToUse%20-%20Debian%20Wiki_files/debian-wiki-1.0.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/htdocs/debwiki/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="Debian Wiki: WiFi/HowToUse" href="https://wiki.debian.org/WiFi/HowToUse?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=WiFi%2FHowToUse&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="https://wiki.debian.org/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.debian.org/WiFi/HowToUse?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.debian.org/WiFi/HowToUse?action=print">
+<link rel="Up" href="https://wiki.debian.org/WiFi">
+<link rel="Search" href="https://wiki.debian.org/FindPage">
+<link rel="Index" href="https://wiki.debian.org/TitleIndex">
+<link rel="Glossary" href="https://wiki.debian.org/WordIndex">
+<link rel="Help" href="https://wiki.debian.org/HelpOnFormatting">
+</head>
+
+<body dir="ltr" lang="en">
+<div id="logo"><a href="https://www.debian.org/" title="Debian Homepage"><img src="WiFi_HowToUse%20-%20Debian%20Wiki_files/openlogo-50.png" alt="Debian" width="50" height="61"></a></div>
+<div id="header">
+<div id="wikisection">
+<p class="section"><a href="https://wiki.debian.org/FrontPage" title="Debian Wiki Homepage">Wiki</a></p>
+<div id="username"><a href="https://wiki.debian.org/WiFi/HowToUse?action=login" id="login" rel="nofollow">Login</a></div>
+</div>
+<div id="navbar">
+
+<ul id="navibar">
+<li class="wikilink"><a href="https://wiki.debian.org/FrontPage">FrontPage</a></li><li class="wikilink"><a href="https://wiki.debian.org/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="https://wiki.debian.org/FindPage">FindPage</a></li><li class="wikilink"><a href="https://wiki.debian.org/HelpContents">HelpContents</a></li><li class="current"><a href="https://wiki.debian.org/WiFi/HowToUse">WiFi/HowToUse</a></li>
+</ul>
+
+</div>
+
+<form id="searchform" method="get" action="/WiFi/HowToUse">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput" style="display: none;">Search:</label>
+<input id="searchinput" type="text" name="value" value="Search" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" class="disabled">
+<input id="titlesearch" name="titlesearch" type="submit" value="Titles" alt="Search Titles" disabled="disabled">
+<input id="fullsearch" name="fullsearch" type="submit" value="Text" alt="Search Full Text" disabled="disabled">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="https://www.debian.org/" title="Debian Homepage"><img src="WiFi_HowToUse%20-%20Debian%20Wiki_files/openlogo-50.png" alt="Debian" width="50" height="61"></a></div>
+
+<div id="breadcrumbs"><a href="https://wiki.debian.org/FrontPage" title="Debian Wiki Homepage">Wiki</a><span class="sep">/</span>
+
+</div>
+
+<ul class="editbar"><li><a href="https://wiki.debian.org/WiFi/HowToUse?action=login" id="login-1" rel="nofollow">Login</a></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.debian.org/WiFi/HowToUse?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.debian.org/WiFi/HowToUse?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/WiFi/HowToUse">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show" selected="selected">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Subscribe User</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<h1 id="locationline">
+
+
+<ul id="pagelocation">
+<li><a href="https://wiki.debian.org/WiFi">WiFi</a></li><li><a href="https://wiki.debian.org/WiFi/HowToUse">HowToUse</a></li>
+</ul>
+
+</h1>
+</div>
+
+<div id="page" dir="ltr" lang="en">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><p class="line867"><small><a href="https://wiki.debian.org/DebianWiki/EditorGuide#translation">Translation(s)</a>: English - <a href="https://wiki.debian.org/fr/WiFi/HowToUse">French</a> - <a href="https://wiki.debian.org/it/WiFi/HowToUse">Italiano</a> - <a href="https://wiki.debian.org/ru/WiFi/HowToUse">Русский</a> - <a href="https://wiki.debian.org/zh-CN/WiFi/HowToUse">简体中文</a> </small> <span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span></p><p class="line867">
+</p><h1 id="How_to_use_a_WiFi_interface">How to use a WiFi interface</h1>
+<span class="anchor" id="line-5"></span><p class="line862">This page describes how to configure a WiFi interface on a Debian system, for use on a network. <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span></p><p class="line862">Once
+ your wireless device has an interface available (verifiable by running 
+"ip link show"), it is required to be configured to access a network.  
+If you do not have a wireless interface present, please refer to <a href="https://wiki.debian.org/WiFi">WiFi</a> for information on obtaining a driver, or the necessary firmware for your device. <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span></p><p class="line874">Wireless
+ network interface configuration requires a backend, generally 
+wpa_supplicant (often in conjunction with ifupdown and other utilities) 
+or IWD. <span class="anchor" id="line-10"></span>These can be used with 
+connection managers that provide advanced functionality, and an easier 
+way to configure them. Examples of these would generally be <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a>,ConnMan, systemd-networkd, and Wicd. <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span></p><p class="line867"><img alt="&lt;!&gt;" src="WiFi_HowToUse%20-%20Debian%20Wiki_files/attention.png" title="&lt;!&gt;" width="16" height="16"> The <a class="interwiki" href="https://en.wikipedia.org/wiki/Wired_Equivalent_Privacy" title="WikiPedia">WEP</a> algorithm is insecure and deprecated by <a href="https://wiki.debian.org/WPA">WPA</a>.  Use of WEP is <strong>not recommended</strong> and is not covered within this document. <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span></p><p class="line867"></p><div class="table-of-contents"><p class="table-of-contents-heading">Contents</p><ol><li>
+<a href="#How_to_use_a_WiFi_interface">How to use a WiFi interface</a></li><li>
+<a href="#Automatic">Automatic</a><ol><li>
+<a href="#NetworkManager">NetworkManager</a><ol><li>
+<a href="#NetworkManager_Frontends">NetworkManager Frontends</a></li><li>
+<a href="#Troubleshooting_.26_Tips_for_NetworkManager">Troubleshooting &amp; Tips for NetworkManager</a></li></ol></li><li>
+<a href="#IWCtl">IWCtl</a><ol><li>
+<a href="#Network_Configuration">Network Configuration</a></li><li>
+<a href="#Configuring_iwd_Via_iwctl">Configuring iwd Via iwctl</a></li><li>
+<a href="#Setting_up_DNS_resolution_for_IWD_.28Simple.29">Setting up DNS resolution for IWD (Simple)</a></li><li>
+<a href="#Debugging_and_Testing">Debugging and Testing</a></li><li>
+<a href="#Further_reading">Further reading</a></li></ol></li><li>
+<a href="#Wicd">Wicd</a></li><li>
+<a href="#ConnMan">ConnMan</a></li></ol></li><li>
+<a href="#Manual">Manual</a><ol><li>
+<a href="#Using_IWD">Using IWD</a></li><li>
+<a href="#Using_ifupdown_and_wireless-tools">Using ifupdown and wireless-tools</a></li><li>
+<a href="#Using_ifupdown_and_wpasupplicant">Using ifupdown and wpasupplicant</a><ol><li>
+<a href="#WPS">WPS</a></li></ol></li><li>
+<a href="#wpa_supplicant">wpa_supplicant</a><ol><li>
+<a href="#WPA-PSK_and_WPA2-PSK">WPA-PSK and WPA2-PSK</a></li><li>
+<a href="#WPA-EAP">WPA-EAP</a></li></ol></li><li>
+<a href="#Switching_Connections">Switching Connections</a></li><li>
+<a href="#Security_consideration">Security consideration</a></li><li>
+<a href="#See_Also">See Also</a></li></ol></li></ol></div> <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span><p class="line867"><span class="anchor" id="network-manager"></span> <span class="anchor" id="line-17"></span>
+</p><h1 id="Automatic">Automatic</h1>
+<span class="anchor" id="line-18"></span><p class="line867">
+</p><h2 id="NetworkManager">NetworkManager</h2>
+<span class="anchor" id="line-19"></span><p class="line867"><span class="anchor" id="line-20"></span></p><p class="line862">For the average desktop user, the easiest way to configure your network is to install the GUI frontend for <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a> that corresponds to your desktop. <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a>
+ itself is a frontend for different network backends (wpa_supplicant by 
+default) that abstracts away the configuration and simplifies it. Your 
+wireless interface should <em>not</em> be referenced within Debian's <tt>/etc/network/interfaces</tt> file. <span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span></p><p class="line867">
+</p><h3 id="NetworkManager_Frontends">NetworkManager Frontends</h3>
+<span class="anchor" id="line-23"></span><p class="line867">
+</p><h4 id="NetworkManager_on_GNOME">NetworkManager on GNOME</h4>
+<span class="anchor" id="line-24"></span><p class="line862">As of GNOME 3, integration with <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a>
+ is baked into GNOME Shell, and will appear in the settings and as an 
+icon in the top-right of your screen as long as it's running. <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span></p><p class="line874">Open the "Networks" section of your settings, select your network in the list, <span class="anchor" id="line-27"></span>enter the password as prompted, and you should be ready to surf the web. <span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span></p><p class="line862">The <a class="interwiki" href="https://packages.debian.org/network-manager-gnome" title="DebianPkg">network-manager-gnome</a> package still exists and provides a systray applet for other desktops, but will not make any difference with GNOME 3. <span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span></p><p class="line862">See the <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a> page for frequently asked questions, documentation and support references. <span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span></p><p class="line867">
+</p><h4 id="NetworkManager_on_KDE_Plasma">NetworkManager on KDE Plasma</h4>
+<span class="anchor" id="line-34"></span><p class="line862">The KDE Plasma task should bring in <a class="interwiki" href="https://packages.debian.org/plasma-nm" title="DebianPkg">plasma-nm</a>
+ during system installation without any extra steps being required, and 
+its usage should be intuitive. If you aren't sure how to use it though, 
+or if you installed the desktop manually and might not have brought it 
+in, the following will likely be useful. <span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span></p><ol type="1"><li><p class="line862">Ensure your user account is a member of the <tt>netdev</tt> group. <span class="anchor" id="line-37"></span></p></li><li><p class="line862">Install the <a class="interwiki" href="https://packages.debian.org/plasma-nm" title="DebianPkg">plasma-nm</a> package. <span class="anchor" id="line-38"></span></p></li><li>Restart your Plasma session (most easily by logging out and logging back in). <span class="anchor" id="line-39"></span></li><li>A new applet (with a traditional "no Wi-Fi signal" icon) will appear in the system tray. Click this icon. <span class="anchor" id="line-40"></span></li><li>Neighboring wireless networks with a broadcasted SSID should be listed: <span class="anchor" id="line-41"></span><ul><li>Click on the desired network's name. <span class="anchor" id="line-42"></span></li><li>If
+ the network uses WPA encryption with a password (aka 
+passphrase/pre-shared key), you will be prompted to enter it.  After 
+providing, click the "Connect" button. <span class="anchor" id="line-43"></span></li><li>The wireless network connection will be activated. <span class="anchor" id="line-44"></span></li></ul>If the desired network is not listed (e.g. SSID not broadcast/hidden): <span class="anchor" id="line-45"></span><ul><li>Click "Connect to Other Wireless Network...". <span class="anchor" id="line-46"></span></li><li>Enter the network's name in "Name (ESSID)". <span class="anchor" id="line-47"></span></li><li>Tick "Use Encryption" if in use on the network. <span class="anchor" id="line-48"></span><ul><li>Select the encryption method used (usually "WPA Personal"). <span class="anchor" id="line-49"></span></li><li>Enter the passphrase/pre-shared key at "Password". <span class="anchor" id="line-50"></span></li><li>Select "WPA 1" or "WPA 2" for the protocol version, as used by the network. <span class="anchor" id="line-51"></span></li></ul></li><li>Click the "Connect" button to activate the wireless network connection. <span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span></li></ul></li></ol><p class="line862">See the <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a> page for frequently asked questions, documentation and support references. <span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span></p><p class="line867">
+</p><h4 id="NetworkManager_on_a_generic_desktop.2Fheadless_session">NetworkManager on a generic desktop/headless session</h4>
+<span class="anchor" id="line-56"></span><p class="line862">If there is no GUI frontend available, the "nmcli" and "nmtui" commands are available as CLI and TUI frontends respectively for <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a>. <span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span></p><p class="line867">
+</p><h3 id="Troubleshooting_.26_Tips_for_NetworkManager">Troubleshooting &amp; Tips for NetworkManager</h3>
+<span class="anchor" id="line-59"></span><p class="line867">
+</p><h4 id="WiFi_can_scan.2C_but_not_connect_using_NetworkManager_.28Debian_9_Stretch.29">WiFi can scan, but not connect using NetworkManager (Debian 9 Stretch)</h4>
+<span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span><p class="line874">If
+ you find that your wireless network device can scan, but will not 
+complete connecting, try turning off MAC address randomization. <span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span></p><p class="line874">Write inside /etc/NetworkManager/NetworkManager.conf: <span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span></p><p class="line867"><span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span></p><pre><span class="anchor" id="line-1"></span>[device]
+<span class="anchor" id="line-2"></span>wifi.scan-rand-mac-address=no</pre><span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span><p class="line862">After doing this, restart <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a> with <tt>service&nbsp;NetworkManager&nbsp;restart</tt> <span class="anchor" id="line-71"></span><span class="anchor" id="line-72"></span></p><p class="line867">
+</p><h4 id="Setting_up_a_WiFi_hotspot">Setting up a WiFi hotspot</h4>
+<span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><p class="line862">In recent years, <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a> is sophisticated enough to set up a <a href="https://wiki.debian.org/WiFi">WiFi</a>
+ hotspot that "just works" (i.e. sets up a local private net, with DHCP 
+and IP forwarding). In some desktops, such as KDE Plasma, a button to 
+create a hotspot is visible in the network applet if two separate 
+wireless network interfaces are present. Alternatively, it can be 
+created manually with a command similar to: <span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span></p><p class="line867"><span class="anchor" id="line-77"></span><span class="anchor" id="line-78"></span></p><pre><span class="anchor" id="line-1-1"></span>nmcli dev wifi hotspot ifname wlp4s0 ssid test password "test1234"</pre><span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span><p class="line862">Source: <a class="https" href="https://unix.stackexchange.com/a/384513">https://unix.stackexchange.com/a/384513</a> <span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span></p><p class="line867">
+</p><h4 id="Changing_the_backend">Changing the backend</h4>
+<span class="anchor" id="line-83"></span><p class="line862">It's possible to replace wpa_supplicant with IWD in <a href="https://wiki.debian.org/NetworkManager">NetworkManager</a>
+ in Debian 10 and newer, though Debian 11 is recommended for the best 
+experience as there are known issues with the old version of IWD present
+ in Debian 10. For more information on how to switch, see <a href="https://wiki.debian.org/NetworkManager/iwd">NetworkManager/iwd</a>. <span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span></p><p class="line867"><span class="anchor" id="iwd"></span> <span class="anchor" id="line-88"></span>
+</p><h2 id="IWCtl">IWCtl</h2>
+<span class="anchor" id="line-89"></span><p class="line862">While also 
+available as backend for ConnMan, NetworkManager, and systemd-networkd, 
+it's also possible to nearly base your entire networking stack on one 
+codebase with IWD alone. It's an all-in-one wireless client, wireless 
+daemon, and even a DHCP client optionally! At its best, your entire 
+networking stack can be as minimal as IWD + systemd-resolved, and this 
+works wonderfully for many scenarios. It has virtually zero dependencies
+ and uses modern kernel features as often as possible. Anecdotal reports
+ suggest that it's much faster to connect to networks than 
+wpa_supplicant, and has better roaming support, among other perceived 
+improvements. <span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span></p><p class="line862">First, install the <a class="interwiki" href="https://packages.debian.org/iwd" title="DebianPkg">iwd</a> package. If you've installed <a class="interwiki" href="https://packages.debian.org/wpasupplicant" title="DebianPkg">wpasupplicant</a>, either uninstall the package, or stop and disable the wpa_supplicant service with: <span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span></p><pre><span class="anchor" id="line-1-2"></span>systemctl --now disable wpa_supplicant</pre><span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span><p class="line874">Then, ensure that the newly-installed IWD service is enabled and running with with: <span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span></p><pre><span class="anchor" id="line-1-3"></span>systemctl --now enable iwd</pre><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><p class="line867">
+</p><h3 id="Network_Configuration">Network Configuration</h3>
+<span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><p class="line862">If
+ you plan to go the route of using IWD standalone, you should first 
+enable some essential features in IWD's configuration file, which can be
+ found at <tt>/etc/iwd/main.conf</tt>. Edit this file with root permissions using your favorite editor. <span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span></p><p class="line874">iwd
+ can be configured to configure the network on its own, without 
+requiring external tools or systems to do so. To enable network 
+configuration, add this section to the configuration file: <span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span></p><p class="line867"><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span></p><pre><span class="anchor" id="line-1-4"></span>[General]
+<span class="anchor" id="line-2-1"></span>EnableNetworkConfiguration=true</pre><span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><p class="line862">Static network configuration can be specified in iwd's network configuration files, as documented in <tt class="backtick">man&nbsp;iwd.network</tt> and <a class="https" href="https://iwd.wiki.kernel.org/networkconfigurationsettings">in the iwd wiki</a>. As per <tt class="backtick">man&nbsp;iwd.config</tt>,
+ "If no static IP  configuration has been provided for a network, iwd 
+will attempt                     to obtain the dynamic addresses from 
+the  network through the built-in DHCP client." <span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span></p><p class="line867">
+</p><h4 id="IPv6">IPv6</h4>
+<span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span><p class="line874">To enable IPv6 support, add this section to the configuration file: <span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span></p><p class="line867"><span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span></p><pre><span class="anchor" id="line-1-5"></span>[Network]
+<span class="anchor" id="line-2-2"></span>EnableIPv6=true</pre><span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span><p class="line867"><span class="anchor" id="line-124"></span><span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span></p><div class="caution"><span class="anchor" id="line-1-1"></span><p class="line867"><strong>Note: IPv6 is still somewhat broken as of version 1.19.</strong> <span class="anchor" id="line-2-1"></span><span class="anchor" id="line-3-1"></span></p><p class="line862">Enabling IPv6 can cause segmentation faults upon connection. <a class="https" href="https://lists.01.org/hyperkitty/list/iwd@lists.01.org/thread/MUBWZLDUDR4A5HARYKEOCPYPDCNLGMT5/">Upstream believes</a> that this has been fixed by <a class="https" href="https://git.kernel.org/pub/scm/libs/ell/ell.git/commit/?id=d0f00698245a2dccbd4b853e3d7b94e7a76cd906">commit d0f00698245a ("dhcp6: Switch to BOUND before LEASE_OBTAINED")</a>,
+ but acknowledges that "IPv6 support in iwd is still somewhat 
+experimental since we still lack support for SLAAC," although "DHCPv6 
+should be mostly functional." </p></div><span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span><p class="line862">After making changes to iwd's configuration file, restart the service with "<tt>service&nbsp;iwd&nbsp;restart</tt>" to have them take effect. <span class="anchor" id="line-130"></span><span class="anchor" id="line-131"></span></p><p class="line867">
+</p><h3 id="Configuring_iwd_Via_iwctl">Configuring iwd Via iwctl</h3>
+<span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span><p class="line862">Start the IWCtl client by running <tt class="backtick">iwctl</tt> as your standard user (not root!), which will start an interactive prompt. You can run <tt class="backtick">help</tt> to get a full list of commands here. (If you actually want to <strong>prevent</strong> non-root users from configuring iwd, see the directions <a class="https" href="https://wiki.archlinux.org/title/Iwd#Optional_configuration">here</a>.) <span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span></p><p class="line862">To connect to a Wi-Fi network in the most typical scenario, first type <tt class="backtick">device&nbsp;list</tt> to find the name of your wireless device. We will use <tt>wlan0</tt>
+ in this example, but your name may be different, and potentially much 
+longer if your system renames interfaces to a unique name. <span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span></p><p class="line862">After you have the device name, run something like <tt class="backtick">station&nbsp;wlan0&nbsp;scan</tt> to have the device scan for networks. You can then list these networks by running <tt class="backtick">station&nbsp;wlan0&nbsp;get-networks</tt>. After you've found the network you intend to connect to, run <tt class="backtick">station&nbsp;wlan0&nbsp;connect&nbsp;Router123</tt>, replacing <tt class="backtick">Router123</tt>
+ with the name of the network. Put the name of the network in 
+double-quotes if it contains a space. (Note that you can use tab 
+completion to enter the network name, and iwd will even help with the 
+quoting.) <span class="anchor" id="line-138"></span><span class="anchor" id="line-139"></span></p><p class="line874">IWCtl will then prompt you for the passphrase. After entering this, IWD will connect to the network, and store it permanently <span class="anchor" id="line-140"></span>in the <tt>/var/lib/iwd</tt> directory. After being added in this way, IWD will attempt to auto-connect to the network in the future. <span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span></p><p class="line862">Try running <tt>ping&nbsp;1.1.1.1</tt> to see if you can reach an IP, and then <tt>ping&nbsp;gnu.org</tt> to see if you can reach a domain. <span class="anchor" id="line-143"></span>If
+ you can't reach an IP, something's gone horribly wrong when connecting 
+to the network. If you can't reach a domain but you can reach an IP, <span class="anchor" id="line-144"></span>you'll need to configure your DNS. The simplest way to accomplish that is ... <span class="anchor" id="line-145"></span><span class="anchor" id="line-146"></span></p><p class="line867">
+</p><h3 id="Setting_up_DNS_resolution_for_IWD_.28Simple.29">Setting up DNS resolution for IWD (Simple)</h3>
+<span class="anchor" id="line-147"></span><p class="line862">If 
+"EnableNetworkConfiguration=true" is set, you'll also need to configure 
+IWD's name resolving service. It supports systemd-resolved and 
+resolvconf. If unspecified, it uses systemd-resolved. Refer to the <a class="interwiki" href="https://manpages.debian.org/man/5/iwd.config" title="DebianMan">IWD.CONFIG(5)</a> page if you care about using resolvconf instead.  <span class="anchor" id="line-148"></span><span class="anchor" id="line-149"></span></p><p class="line874">If
+ DNS is nonfunctional, you likely need to configure systemd-resolved for
+ use with IWD. Enable and start the systemd-resolved service, if it 
+isn't already, by running: <span class="anchor" id="line-150"></span><span class="anchor" id="line-151"></span></p><pre><span class="anchor" id="line-1-6"></span>systemctl enable --now systemd-resolved</pre><span class="anchor" id="line-152"></span><span class="anchor" id="line-153"></span><p class="line862">Then, symlink <tt>/etc/resolv.conf</tt> to <tt>/run/systemd/resolve/stub-resolv.conf</tt> by running: <span class="anchor" id="line-154"></span><span class="anchor" id="line-155"></span><span class="anchor" id="line-156"></span></p><pre><span class="anchor" id="line-1-7"></span># ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf</pre><span class="anchor" id="line-157"></span><span class="anchor" id="line-158"></span><p class="line862">That should be enough to get you online. If you want to make changes to your DNS configuration, refer to the <tt>/etc/systemd/resolved.conf</tt> file, and the associated manpage at <a class="interwiki" href="https://manpages.debian.org/man/5/resolved.conf" title="DebianMan">RESOLVED.CONF(5)</a> <span class="anchor" id="line-159"></span><span class="anchor" id="line-160"></span></p><p class="line867">
+</p><h3 id="Debugging_and_Testing">Debugging and Testing</h3>
+<span class="anchor" id="line-161"></span><span class="anchor" id="line-162"></span><p class="line862">To help diagnose problems, run iwd manually (as opposed to via systemd) with the debug switch: <tt class="backtick">iwd&nbsp;-d</tt>. <span class="anchor" id="line-163"></span><span class="anchor" id="line-164"></span></p><p class="line867">
+</p><h3 id="Further_reading">Further reading</h3>
+<span class="anchor" id="line-165"></span><p class="line862">Keep in 
+mind, this is just covering the most basic of basics for getting online 
+in a completely typical scenario, and it might not apply to you! For 
+more advanced setups, refer to the help output for IWCtl. Documentation 
+on other options for the <tt>/etc/iwd/main.conf</tt> file can be found in [<a class="interwiki" href="https://manpages.debian.org/man/5/iwd" title="DebianMan">5/iwd</a>.config|IWD.CONFIG(5)]]. Documentation for the network files in <tt>/var/lib/iwd</tt> can be found in <a class="interwiki" href="https://manpages.debian.org/man/5/iwd.network" title="DebianMan">IWD.NETWORK(5)</a>. <span class="anchor" id="line-166"></span><span class="anchor" id="line-167"></span></p><p class="line862">Some
+ of the information here was adapted from this lovely blogpost, which 
+has more details and more ideas for how you can configure your own 
+setup: <a class="https" href="https://insanity.industries/post/simple-networking/">https://insanity.industries/post/simple-networking/</a> <span class="anchor" id="line-168"></span><span class="anchor" id="line-169"></span></p><p class="line862">The official iwd documentation is <a class="https" href="https://iwd.wiki.kernel.org/start">here</a>. <span class="anchor" id="line-170"></span><span class="anchor" id="line-171"></span></p><p class="line862">As usual, <a class="nonexistent" href="https://wiki.debian.org/ArchWiki">?</a>ArchWiki has <a class="https" href="https://wiki.archlinux.org/title/Iwd">excellent documentation</a> of iwd usage and configuration. <span class="anchor" id="line-172"></span></p><hr><p class="line874"> <span class="anchor" id="line-173"></span><span class="anchor" id="line-174"></span></p><p class="line867"><span class="anchor" id="wicd"></span> <span class="anchor" id="line-175"></span>
+</p><h2 id="Wicd">Wicd</h2>
+<span class="anchor" id="line-176"></span><span class="anchor" id="line-177"></span><p class="line867"><img alt="&lt;!&gt;" src="WiFi_HowToUse%20-%20Debian%20Wiki_files/attention.png" title="&lt;!&gt;" width="16" height="16"> Wicd is not available in Debian 11/Bullseye or newer, <a class="https" href="https://tracker.debian.org/news/1171012/removed-174tb2-6-from-unstable/">due to the deprecation of Python 2.</a> <span class="anchor" id="line-178"></span><span class="anchor" id="line-179"></span></p><p class="line867"><img alt="&lt;!&gt;" src="WiFi_HowToUse%20-%20Debian%20Wiki_files/attention.png" title="&lt;!&gt;" width="16" height="16">
+ You must remove network-manager to get wicd to work.  Check to see if 
+network-manager is installed and see if, after you installed the driver,
+ your wireless is already working in the notification area of your 
+desktop manager.  You may already be good to go. <span class="anchor" id="line-180"></span><span class="anchor" id="line-181"></span></p><p class="line867"><a class="interwiki" href="https://en.wikipedia.org/wiki/Wicd" title="WikiPedia">wicd</a>
+ (Wireless Interface Connection Daemon) is a lightweight alternative to 
+NetworkManager, using wpa_supplicant as a backend.  It is 
+environment-independent, making it suitable for all desktop 
+environments, including GNOME, Xfce, LXDE, and Fluxbox.  Like 
+NetworkManager, wicd is configured via a graphical interface.  Your 
+wireless interface should <em>not</em> be referenced within Debian's <tt>/etc/network/interfaces</tt> file. <span class="anchor" id="line-182"></span><span class="anchor" id="line-183"></span></p><p class="line867"><span class="anchor" id="line-184"></span></p><p class="line867"><span class="anchor" id="line-185"></span></p><p class="line867"><span class="anchor" id="line-186"></span></p><ol type="1"><li><p class="line862">Update the list of available packages and install the <a class="interwiki" href="https://packages.debian.org/wicd" title="DebianPkg">wicd</a> package: <span class="anchor" id="line-187"></span><span class="anchor" id="line-188"></span></p><pre><span class="anchor" id="line-1-8"></span># apt update
+<span class="anchor" id="line-2-3"></span># apt install wicd</pre><span class="anchor" id="line-189"></span></li><li><p class="line862">Amend <tt>/etc/network/interfaces</tt> to contain only the following: <span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span><span class="anchor" id="line-192"></span><span class="anchor" id="line-193"></span><span class="anchor" id="line-194"></span><span class="anchor" id="line-195"></span></p><pre><span class="anchor" id="line-1-9"></span># This file describes the network interfaces available on your system
+<span class="anchor" id="line-2-4"></span># and how to activate them. For more information, see interfaces(5).
+<span class="anchor" id="line-3"></span>
+<span class="anchor" id="line-4"></span># The loopback network interface
+<span class="anchor" id="line-5"></span>auto lo
+<span class="anchor" id="line-6"></span>iface lo inet loopback</pre><span class="anchor" id="line-196"></span><p class="line891"><strong>Note:</strong> as of wheezy it is fine to have your wireless interface in <tt>/etc/network/interfaces</tt>, but not required. You can set the wireless interface (e.g. wlan0) in the wicd client's preferences. <span class="anchor" id="line-197"></span></p></li><li><p class="line862">If not already performed, add your regular user account to the <tt>netdev</tt> group and reload DBus: <span class="anchor" id="line-198"></span><span class="anchor" id="line-199"></span></p><pre><span class="anchor" id="line-1-10"></span># adduser yourusername netdev
+<span class="anchor" id="line-2-5"></span># service dbus restart</pre><span class="anchor" id="line-200"></span></li><li><p class="line862">Start the wicd daemon: <span class="anchor" id="line-201"></span></p><pre><span class="anchor" id="line-1-11"></span># service wicd start</pre><span class="anchor" id="line-202"></span></li><li><p class="line862">Start the wicd GUI with your regular user account: <span class="anchor" id="line-203"></span><span class="anchor" id="line-204"></span></p><pre><span class="anchor" id="line-1-12"></span># exit
+<span class="anchor" id="line-2-6"></span>$ wicd-client -n</pre><span class="anchor" id="line-205"></span><span class="anchor" id="line-206"></span></li></ol><p class="line862">See also <a class="https" href="https://answers.launchpad.net/wicd/+faqs">wicd frequently asked questions</a>. <span class="anchor" id="line-207"></span><span class="anchor" id="line-208"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-209"></span><span class="anchor" id="line-210"></span></p><p class="line867"><span class="anchor" id="connman"></span> <span class="anchor" id="line-211"></span>
+</p><h2 id="ConnMan">ConnMan</h2>
+<span class="anchor" id="line-212"></span><span class="anchor" id="line-213"></span><p class="line867">ConnMan is another network frontend designed for embedded devices. Example usage: <span class="anchor" id="line-214"></span><span class="anchor" id="line-215"></span><span class="anchor" id="line-216"></span><span class="anchor" id="line-217"></span><span class="anchor" id="line-218"></span><span class="anchor" id="line-219"></span><span class="anchor" id="line-220"></span><span class="anchor" id="line-221"></span><span class="anchor" id="line-222"></span><span class="anchor" id="line-223"></span><span class="anchor" id="line-224"></span><span class="anchor" id="line-225"></span><span class="anchor" id="line-226"></span><span class="anchor" id="line-227"></span><span class="anchor" id="line-228"></span><span class="anchor" id="line-229"></span><span class="anchor" id="line-230"></span><span class="anchor" id="line-231"></span><span class="anchor" id="line-232"></span><span class="anchor" id="line-233"></span><span class="anchor" id="line-234"></span><span class="anchor" id="line-235"></span><span class="anchor" id="line-236"></span><span class="anchor" id="line-237"></span></p><pre><span class="anchor" id="line-1-13"></span># apt install connman
+<span class="anchor" id="line-2-7"></span>
+<span class="anchor" id="line-3-1"></span>$  /usr/sbin/connmanctl 
+<span class="anchor" id="line-4-1"></span>connmanctl&gt; enable wifi
+<span class="anchor" id="line-5-1"></span>connmanctl&gt; scan wifi 
+<span class="anchor" id="line-6-1"></span>Scan completed for wifi
+<span class="anchor" id="line-7"></span>
+<span class="anchor" id="line-8"></span>connmanctl&gt; services 
+<span class="anchor" id="line-9"></span>$SSID    wifi_f8d111090ed6_6d617269636f6e5f64655f6d6965726461_managed_psk
+<span class="anchor" id="line-10"></span>...      ...
+<span class="anchor" id="line-11"></span>
+<span class="anchor" id="line-12"></span>connmanctl&gt; agent on
+<span class="anchor" id="line-13"></span>Agent registered
+<span class="anchor" id="line-14"></span>
+<span class="anchor" id="line-15"></span>connmanctl&gt; connect wifi_f8d111090ed6_6d617269636f6e5f64655f6d6965726461_managed_psk 
+<span class="anchor" id="line-16"></span>Agent RequestInput wifi_f8d111090ed6_6d617269636f6e5f64655f6d6965726461_managed_psk
+<span class="anchor" id="line-17"></span>Passphrase = [ Type=psk, Requirement=mandatory, Alternates=[ WPS ] ]
+<span class="anchor" id="line-18"></span>WPS = [ Type=wpspin, Requirement=alternate ]
+<span class="anchor" id="line-19"></span>Passphrase? $PASS
+<span class="anchor" id="line-20"></span>Connected wifi_f8d111090ed6_6d617269636f6e5f64655f6d6965726461_managed_psk
+<span class="anchor" id="line-21"></span>
+<span class="anchor" id="line-22"></span>connmanctl&gt; quit</pre><span class="anchor" id="line-238"></span><span class="anchor" id="line-239"></span><p class="line862">After the configuration, <strong>connman</strong>
+ remembers your SSID selections and reusees them automatically. Don't 
+worry about long HEXes - in client mode TAB auto-completion works both 
+for commands and data. <span class="anchor" id="line-240"></span><span class="anchor" id="line-241"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-242"></span><span class="anchor" id="line-243"></span></p><p class="line867">
+</p><h1 id="Manual">Manual</h1>
+<span class="anchor" id="line-244"></span><span class="anchor" id="line-245"></span><p class="line867">
+</p><h2 id="Using_IWD">Using IWD</h2>
+<span class="anchor" id="line-246"></span><p class="line874">While IWD is often a backend for more comprehensive connection managers, <span class="anchor" id="line-247"></span>it can also be used fully standalone, and is completely distinct <span class="anchor" id="line-248"></span>from wpa_supplicant. With virtually no extra dependencies, <span class="anchor" id="line-249"></span>it's one of the lightest and simplest methods for configuring <span class="anchor" id="line-250"></span>wireless networking. See the <a href="https://wiki.debian.org/WiFi/HowToUse#iwd">IWD section</a> for more information, and <span class="anchor" id="line-251"></span>view the <a class="interwiki" href="https://manpages.debian.org/man/5/iwd.network" title="DebianMan">IWD.NETWORK(5)</a> manpage if you're interested <span class="anchor" id="line-252"></span>in writing manual connection files for IWD rather than going through IWCtl. <span class="anchor" id="line-253"></span><span class="anchor" id="line-254"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-255"></span><span class="anchor" id="line-256"></span></p><p class="line867"><span class="anchor" id="command_line"></span> <span class="anchor" id="line-257"></span>
+</p><h2 id="Using_ifupdown_and_wireless-tools">Using ifupdown and wireless-tools</h2>
+<span class="anchor" id="line-258"></span><span class="anchor" id="line-259"></span><p class="line862">This recipe is for <em>unencrypted</em> (open) wifi networks.  It is known to rely only on the limited tooling available in <tt class="backtick">debian-live-standard</tt> ISO images for Debian Buster. <span class="anchor" id="line-260"></span><span class="anchor" id="line-261"></span></p><p class="line862">Edit <tt>/etc/network/interfaces</tt> like so -- assuming a network ESSID named <tt class="backtick">Home&nbsp;Network</tt> and a network device named <tt class="backtick">wlp2s0</tt>: <span class="anchor" id="line-262"></span><span class="anchor" id="line-263"></span></p><p class="line867"><span class="anchor" id="line-264"></span><span class="anchor" id="line-265"></span><span class="anchor" id="line-266"></span><span class="anchor" id="line-267"></span></p><pre><span class="anchor" id="line-1-14"></span>allow-hotplug wlp2s0
+<span class="anchor" id="line-2-8"></span>iface wlp2s0 inet dhcp
+<span class="anchor" id="line-3-2"></span>        wireless-essid Home Network</pre><span class="anchor" id="line-268"></span><span class="anchor" id="line-269"></span><p class="line862">(Note the lack of quotation or escaping of spaces in the argument to <tt class="backtick">wireless-essid</tt>.) <span class="anchor" id="line-270"></span><span class="anchor" id="line-271"></span></p><p class="line867">
+</p><h2 id="Using_ifupdown_and_wpasupplicant">Using ifupdown and wpasupplicant</h2>
+<span class="anchor" id="line-272"></span><p class="line862">These instructions require and make use of <a class="interwiki" href="https://packages.debian.org/ifupdown" title="DebianPkg">ifupdown</a>, <a class="interwiki" href="https://packages.debian.org/iproute2" title="DebianPkg">iproute2</a>, <a class="interwiki" href="https://packages.debian.org/wpasupplicant" title="DebianPkg">wpasupplicant</a> (For WPA2 support), <a class="interwiki" href="https://packages.debian.org/iw" title="DebianPkg">iw</a>, and <a class="interwiki" href="https://packages.debian.org/wireless-tools" title="DebianPkg">wireless-tools</a>. <span class="anchor" id="line-273"></span>Ensure you have all of these installed before continuing. You also might be interested in the instructions below that <em>only</em> use <a class="interwiki" href="https://packages.debian.org/ifupdown" title="DebianPkg">ifupdown</a> and <a class="interwiki" href="https://packages.debian.org/wpasupplicant" title="DebianPkg">wpasupplicant</a>, <span class="anchor" id="line-274"></span>along with using a more advanced configuration. See <a href="https://wiki.debian.org/WiFi/HowToUse#wpasupplicant">#wpasupplicant</a> <span class="anchor" id="line-275"></span><span class="anchor" id="line-276"></span></p><p class="line874">Find
+ your wireless interface and bring it up: (NOTE: wlp2s0 is an example, 
+you will need to make sure to use the correct device name for your 
+system)  <span class="anchor" id="line-277"></span><span class="anchor" id="line-278"></span></p><p class="line867"><span class="anchor" id="line-279"></span><span class="anchor" id="line-280"></span><span class="anchor" id="line-281"></span><span class="anchor" id="line-282"></span></p><pre><span class="anchor" id="line-1-15"></span># ip a
+<span class="anchor" id="line-2-9"></span># iw dev
+<span class="anchor" id="line-3-3"></span># ip link set wlp2s0 up</pre><span class="anchor" id="line-283"></span><span class="anchor" id="line-284"></span><p class="line874">Scan for available networks and get network details (If you already know your wifi network id/ESSID, you can skip this step): <span class="anchor" id="line-285"></span><span class="anchor" id="line-286"></span></p><p class="line867"><span class="anchor" id="line-287"></span><span class="anchor" id="line-288"></span><span class="anchor" id="line-289"></span></p><pre><span class="anchor" id="line-1-16"></span>$ su -l
+<span class="anchor" id="line-2-10"></span># iwlist scan</pre><span class="anchor" id="line-290"></span><span class="anchor" id="line-291"></span><p class="line862">Now edit <tt>/etc/network/interfaces</tt>.
+ The required configuration is much dependent on your particular setup. 
+The following example will work for most commonly found WPA/WPA2 
+networks:   <span class="anchor" id="line-292"></span><span class="anchor" id="line-293"></span></p><p class="line867"><span class="anchor" id="line-294"></span><span class="anchor" id="line-295"></span><span class="anchor" id="line-296"></span><span class="anchor" id="line-297"></span><span class="anchor" id="line-298"></span><span class="anchor" id="line-299"></span></p><pre><span class="anchor" id="line-1-17"></span># my wifi device
+<span class="anchor" id="line-2-11"></span>allow-hotplug wlp2s0
+<span class="anchor" id="line-3-4"></span>iface wlp2s0 inet dhcp
+<span class="anchor" id="line-4-2"></span>        wpa-ssid ESSID
+<span class="anchor" id="line-5-2"></span>        wpa-psk PASSWORD</pre><span class="anchor" id="line-300"></span><span class="anchor" id="line-301"></span><p class="line874">Bring up your interface and verify the connection:  <span class="anchor" id="line-302"></span><span class="anchor" id="line-303"></span></p><p class="line867"><span class="anchor" id="line-304"></span><span class="anchor" id="line-305"></span><span class="anchor" id="line-306"></span><span class="anchor" id="line-307"></span></p><pre><span class="anchor" id="line-1-18"></span># ifup wlp2s0
+<span class="anchor" id="line-2-12"></span># iw wlp2s0 link
+<span class="anchor" id="line-3-5"></span># ip a</pre><span class="anchor" id="line-308"></span><span class="anchor" id="line-309"></span><p class="line862">You can manually bring your interface up and down with the <tt>ifup</tt> and <tt>ifdown</tt> commands. If you added <tt>allow-hotplug&nbsp;wlp2s0</tt> as in the example above, the interface will be brought up automatically at boot. <span class="anchor" id="line-310"></span><span class="anchor" id="line-311"></span></p><p class="line862">For further information on available configuration options, see <tt>man&nbsp;interfaces</tt>, <tt>man&nbsp;iw</tt>, <tt>man&nbsp;wireless</tt> and <tt>/usr/share/doc/wireless-tools/README.Debian</tt>.  <span class="anchor" id="line-312"></span><span class="anchor" id="line-313"></span></p><p class="line867">
+</p><h3 id="WPS">WPS</h3>
+<span class="anchor" id="line-314"></span><span class="anchor" id="line-315"></span><p class="line867">
+</p><h4 id="WPS-PBC">WPS-PBC</h4>
+<span class="anchor" id="line-316"></span><span class="anchor" id="line-317"></span><p class="line862">Find your WiFi network where WPS is enabled. <span class="anchor" id="line-318"></span><span class="anchor" id="line-319"></span><span class="anchor" id="line-320"></span><span class="anchor" id="line-321"></span><span class="anchor" id="line-322"></span><span class="anchor" id="line-323"></span><span class="anchor" id="line-324"></span><span class="anchor" id="line-325"></span><span class="anchor" id="line-326"></span><span class="anchor" id="line-327"></span></p><pre><span class="anchor" id="line-1-19"></span># iwlist scan
+<span class="anchor" id="line-2-13"></span>
+<span class="anchor" id="line-3-6"></span>wlan0     Scan completed :
+<span class="anchor" id="line-4-3"></span>          Cell 01 - Address: 11:22:33:44:55:66
+<span class="anchor" id="line-5-3"></span>                    Channel:11
+<span class="anchor" id="line-6-2"></span>                    Frequency:2.462 GHz (Channel 11)
+<span class="anchor" id="line-7-1"></span>                    Quality=64/70  Signal level=-46 dBm 
+<span class="anchor" id="line-8-1"></span>...</pre><span class="anchor" id="line-328"></span><span class="anchor" id="line-329"></span><p class="line874">Use wpa_cli to connect to the MAC address provided by the scan. <span class="anchor" id="line-330"></span><span class="anchor" id="line-331"></span></p><p class="line867"><span class="anchor" id="line-332"></span><span class="anchor" id="line-333"></span></p><pre><span class="anchor" id="line-1-20"></span># wpa_cli wps_pbc 11:22:33:44:55:66</pre><span class="anchor" id="line-334"></span><span class="anchor" id="line-335"></span><p class="line874">Then press the WPS button on your access point to start the PBC mode. <span class="anchor" id="line-336"></span><span class="anchor" id="line-337"></span></p><p class="line874">Once connected, start dhclient to obtain a dynamic IP address. <span class="anchor" id="line-338"></span><span class="anchor" id="line-339"></span></p><p class="line867"><span class="anchor" id="line-340"></span><span class="anchor" id="line-341"></span></p><pre><span class="anchor" id="line-1-21"></span>dhclient wlan0</pre><span class="anchor" id="line-342"></span><span class="anchor" id="line-343"></span><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-344"></span><span class="anchor" id="line-345"></span></p><p class="line867"><span class="anchor" id="wpa_supplicant"></span> <span class="anchor" id="line-346"></span>
+</p><h2 id="wpa_supplicant-1">wpa_supplicant</h2>
+<span class="anchor" id="line-347"></span><p class="line862">wpa_supplicant is a <a href="https://wiki.debian.org/WPA">WPA</a> client and IEEE 802.1X <a class="interwiki" href="https://en.wikipedia.org/wiki/Supplicant_%28computer%29" title="WikiPedia">supplicant</a>. <span class="anchor" id="line-348"></span><span class="anchor" id="line-349"></span></p><p class="line862">The <a class="interwiki" href="https://packages.debian.org/wpasupplicant" title="DebianPkg">wpasupplicant</a> package provides <tt>wpa-*</tt> <a class="interwiki" href="https://manpages.debian.org/man/8/ifup" title="DebianMan">ifupdown</a> options for <tt>/etc/network/interfaces</tt>.
+  If these options are specified, wpa_supplicant is started in the 
+background when your wireless interface is raised and stopped when 
+brought down. <span class="anchor" id="line-350"></span><span class="anchor" id="line-351"></span></p><ul><li style="list-style-type:none"><p class="line891"><img alt="{i}" src="WiFi_HowToUse%20-%20Debian%20Wiki_files/icon-info.png" title="{i}" width="16" height="16"> GNOME and KDE users shouldn't configure wpa_supplicant manually.  Use NetworkManager as <a href="https://wiki.debian.org/WiFi/HowToUse#network-manager">explained above</a>. <span class="anchor" id="line-352"></span><span class="anchor" id="line-353"></span></p></li></ul><p class="line862">Before continuing, install the <a class="interwiki" href="https://packages.debian.org/wpasupplicant" title="DebianPkg">wpasupplicant</a> package. <span class="anchor" id="line-354"></span><span class="anchor" id="line-355"></span></p><p class="line867">
+</p><h3 id="WPA-PSK_and_WPA2-PSK">WPA-PSK and WPA2-PSK</h3>
+<span class="anchor" id="line-356"></span><p class="line867"><img alt="{i}" src="WiFi_HowToUse%20-%20Debian%20Wiki_files/icon-info.png" title="{i}" width="16" height="16"> Also known as "WPA Personal" and "WPA2 Personal" respectively. <span class="anchor" id="line-357"></span><span class="anchor" id="line-358"></span></p><ol type="1"><li><p class="line862">Restrict the permissions of <tt>/etc/network/interfaces</tt>,
+ to prevent pre-shared key (PSK) disclosure (alternatively use a 
+separate config file such as /etc/network/interfaces.d/wlan0 on newer 
+Debian versions): <span class="anchor" id="line-359"></span><span class="anchor" id="line-360"></span></p><pre><span class="anchor" id="line-1-22"></span># chmod 0600 /etc/network/interfaces</pre><span class="anchor" id="line-361"></span></li><li>Use the WPA passphrase to calculate the correct WPA PSK hash for your SSID by altering the following example:  <span class="anchor" id="line-362"></span></li></ol><p class="line867"><span class="anchor" id="line-363"></span><span class="anchor" id="line-364"></span></p><pre><span class="anchor" id="line-1-23"></span>$ su -l -c "wpa_passphrase myssid my_very_secret_passphrase &gt; /etc/wpa_supplicant/wpa_supplicant.conf"</pre><span class="anchor" id="line-365"></span><span class="anchor" id="line-366"></span><p class="line874">If
+ you don't put the passphrase on the command line, it will be prompted 
+for.  The above command gives the following output and pipe(write) it to
+ "/etc/wpa_supplicant/wpa_supplicant.conf": <span class="anchor" id="line-367"></span><span class="anchor" id="line-368"></span><span class="anchor" id="line-369"></span><span class="anchor" id="line-370"></span><span class="anchor" id="line-371"></span><span class="anchor" id="line-372"></span><span class="anchor" id="line-373"></span></p><pre><span class="anchor" id="line-1-24"></span>network={
+<span class="anchor" id="line-2-14"></span>        ssid="myssid"
+<span class="anchor" id="line-3-7"></span>        #psk="my_very_secret_passphrase"
+<span class="anchor" id="line-4-4"></span>        psk=ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b
+<span class="anchor" id="line-5-4"></span>}</pre><span class="anchor" id="line-374"></span><span class="anchor" id="line-375"></span><p class="line862">Since wpa_supplicant v2.6, you need to add following in your <tt>/etc/wpa_supplicant/wpa_supplicant.conf</tt> in order to function <tt>sudo&nbsp;wpa_cli</tt>: <span class="anchor" id="line-376"></span><span class="anchor" id="line-377"></span></p><p class="line867"><span class="anchor" id="line-378"></span><span class="anchor" id="line-379"></span><span class="anchor" id="line-380"></span></p><pre><span class="anchor" id="line-1-25"></span>ctrl_interface=/run/wpa_supplicant 
+<span class="anchor" id="line-2-15"></span>update_config=1</pre><span class="anchor" id="line-381"></span><span class="anchor" id="line-382"></span><p class="line874">you'll need to copy from "psk=" to the end of the line, to put in your /etc/network/interfaces file. <span class="anchor" id="line-383"></span><span class="anchor" id="line-384"></span></p><p class="line874">Quick connect to the configured network (doesn't require ifupdown): <span class="anchor" id="line-385"></span><span class="anchor" id="line-386"></span></p><p class="line867"><span class="anchor" id="line-387"></span><span class="anchor" id="line-388"></span><span class="anchor" id="line-389"></span><span class="anchor" id="line-390"></span><span class="anchor" id="line-391"></span></p><pre><span class="anchor" id="line-1-26"></span>sudo systemctl reenable wpa_supplicant.service
+<span class="anchor" id="line-2-16"></span>sudo service wpa_supplicant restart
+<span class="anchor" id="line-3-8"></span>sudo service dhcpcd restart
+<span class="anchor" id="line-4-5"></span>sudo wpa_supplicant -B -Dwext -i &lt;interface&gt; -c/etc/wpa_supplicant.conf</pre><span class="anchor" id="line-392"></span><span class="anchor" id="line-393"></span><p class="line874">Now you should have connected to the internet. <span class="anchor" id="line-394"></span><span class="anchor" id="line-395"></span></p><ol type="1"><li><p class="line862">Open <tt>/etc/network/interfaces</tt> in a text editor : <span class="anchor" id="line-396"></span><span class="anchor" id="line-397"></span></p><pre><span class="anchor" id="line-1-27"></span># sensible-editor /etc/network/interfaces</pre><span class="anchor" id="line-398"></span></li><li><p class="line862">Define appropriate stanzas for your wireless interface, along with the SSID and PSK HASH. For example : <span class="anchor" id="line-399"></span><span class="anchor" id="line-400"></span><span class="anchor" id="line-401"></span><span class="anchor" id="line-402"></span><span class="anchor" id="line-403"></span></p><pre><span class="anchor" id="line-1-28"></span>allow-hotplug wlan0
+<span class="anchor" id="line-2-17"></span>iface wlan0 inet dhcp
+<span class="anchor" id="line-3-9"></span>        wpa-ssid myssid
+<span class="anchor" id="line-4-6"></span>        wpa-psk ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b</pre><span class="anchor" id="line-404"></span>The "allow-hotplug" stanza will bring your interface up at system startup.  If not desired, remove or comment this line. <span class="anchor" id="line-405"></span><span class="anchor" id="line-406"></span></li><li class="gap">Save the file and exit the editor. <span class="anchor" id="line-407"></span></li><li><p class="line862">Bring your interface up.  This will start wpa_supplicant as a background process. <span class="anchor" id="line-408"></span><span class="anchor" id="line-409"></span></p><pre><span class="anchor" id="line-1-29"></span># ifup wlan0</pre><span class="anchor" id="line-410"></span><span class="anchor" id="line-411"></span></li></ol><p class="line862">Additional <tt>wpa-*</tt> options are described within <tt>/usr/share/doc/wpasupplicant/README.modes.gz</tt>.  This should also be read if connecting to a network not broadcasting its SSID. <span class="anchor" id="line-412"></span><span class="anchor" id="line-413"></span></p><p class="line862">For general <tt>/etc/network/interfaces</tt> information, see the <a class="interwiki" href="https://manpages.debian.org/man/5/interfaces" title="DebianMan">interfaces(5)</a> man page. <span class="anchor" id="line-414"></span><span class="anchor" id="line-415"></span></p><p class="line867">
+</p><h3 id="WPA-EAP">WPA-EAP</h3>
+<span class="anchor" id="line-416"></span><span class="anchor" id="line-417"></span><p class="line862">For networks using <a class="interwiki" href="https://en.wikipedia.org/wiki/Extensible_Authentication_Protocol" title="WikiPedia">EAP-TLS</a>,
+ you are required to establish a wpa_supplicant configuration file and 
+provide the client-side certificate.  An example WPA2-EAP configuration 
+file can be found at <a class="file" href="file:///usr/share/doc/wpasupplicant/examples/wpa2-eap-ccmp.conf">/usr/share/doc/wpasupplicant/examples/wpa2-eap-ccmp.conf</a>. <span class="anchor" id="line-418"></span><span class="anchor" id="line-419"></span></p><p class="line862">Once available, reference your configuration file in <tt>/etc/network/interfaces</tt>.  For example: <span class="anchor" id="line-420"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-421"></span><span class="anchor" id="line-422"></span><span class="anchor" id="line-423"></span><span class="anchor" id="line-424"></span><pre><span class="anchor" id="line-1-30"></span>allow-hotplug wlan0
+<span class="anchor" id="line-2-18"></span>iface wlan0 inet dhcp
+<span class="anchor" id="line-3-10"></span>    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</pre><span class="anchor" id="line-425"></span><span class="anchor" id="line-426"></span></li></ul><p class="line862">More information can be found in the <a class="interwiki" href="https://manpages.debian.org/man/5/wpa_supplicant.conf" title="DebianMan">wpa_supplicant.conf(5)</a> man page.  A fully-commented wpa_supplicant configuration file example is at <tt>/usr/share/doc/wpasupplicant/README.wpa_supplicant.conf.gz</tt>. <span class="anchor" id="line-427"></span><span class="anchor" id="line-428"></span></p><p class="line867">
+</p><h2 id="Switching_Connections">Switching Connections</h2>
+<span class="anchor" id="line-429"></span><p class="line874">To switch between multiple distinct configurations: <span class="anchor" id="line-430"></span><span class="anchor" id="line-431"></span></p><ul><li><p class="line862">Use <a class="interwiki" href="https://packages.debian.org/ifscheme" title="DebianPkg">ifscheme</a>.
+ This integrates with the "Debian" way of doing networking, using ifup 
+and /etc/network/interfaces, and allows you to set up different schemes 
+for network configuration. See the manpage for more information: <a class="interwiki" href="https://manpages.debian.org/man/8/ifscheme" title="DebianMan">IFSCHEME(8)</a> <span class="anchor" id="line-432"></span></p></li><li><p class="line862">You can use <a class="interwiki" href="https://manpages.debian.org/man/8/guessnet" title="DebianMan">guessnet(8)</a> to switch profiles automatically by your location. <span class="anchor" id="line-433"></span><span class="anchor" id="line-434"></span></p></li></ul><p class="line867">
+</p><h2 id="Security_consideration">Security consideration</h2>
+<span class="anchor" id="line-435"></span><span class="anchor" id="line-436"></span><ol type="1"><li><p class="line862">Every member of a network can <em>listen</em> to other members' traffic (whether it's an unencrypted public hot-spot, or a WEP/WPA/WPA2, or LAN). <strong>Use SSL/TLS protocols (HTTPS, IMAPS...) or VPN to preserve your privacy.</strong> <span class="anchor" id="line-437"></span></p></li><li>WEP is so insecure that it is basically equivalent to not using any encryption at all. <span class="anchor" id="line-438"></span></li><li><p class="line862">WPA<strong>1</strong> is deprecated. <strong>Use WPA2 instead.</strong> <span class="anchor" id="line-439"></span></p></li><li><p class="line862">Make sure you use a <strong>strong pass-phrase</strong>. <span class="anchor" id="line-440"></span><span class="anchor" id="line-441"></span></p></li></ol><p class="line862">Network security, see: <a class="https" href="https://www.aircrack-ng.org/doku.php?id=tutorial">https://www.aircrack-ng.org/doku.php?id=tutorial</a>. <span class="anchor" id="line-442"></span><span class="anchor" id="line-443"></span></p><p class="line867">
+</p><h2 id="See_Also">See Also</h2>
+<span class="anchor" id="line-444"></span><ul><li><p class="line891"><a href="https://wiki.debian.org/WiFi/AdHoc">WiFi/AdHoc</a> - Establishing a WiFi network without an access point. <span class="anchor" id="line-445"></span></p></li><li><p class="line891"><a class="interwiki" href="https://manpages.debian.org/man/8/iwconfig" title="DebianMan">iwconfig(8)</a> <span class="anchor" id="line-446"></span></p></li><li><p class="line891"><a href="https://wiki.debian.org/NetworkConfiguration">NetworkConfiguration</a> <span class="anchor" id="line-447"></span></p></li><li><p class="line891"><a href="https://wiki.debian.org/NetworkManager">NetworkManager</a> <span class="anchor" id="line-448"></span></p></li><li><p class="line891"><a href="https://wiki.debian.org/WiFi">WiFi</a> <span class="anchor" id="line-449"></span></p></li><li><p class="line891"><a href="https://wiki.debian.org/WPA">WPA</a> <span class="anchor" id="line-450"></span><span class="anchor" id="line-451"></span></p></li></ul><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-452"></span><a href="https://wiki.debian.org/CategoryNetwork">CategoryNetwork</a> | <a href="https://wiki.debian.org/CategoryWireless">CategoryWireless</a> <span class="anchor" id="line-453"></span><span class="anchor" id="bottom"></span></p></div><div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<p id="pageinfo" class="info" dir="ltr" lang="en">WiFi/HowToUse  (<a class="nbinfo" href="https://wiki.debian.org/WiFi/HowToUse?action=info" rel="nofollow">last modified 2023-04-28 16:44:18</a>)</p>
+
+<ul id="credits">
+<li>Debian <a href="https://www.debian.org/legal/privacy">privacy policy</a>, Wiki <a href="https://wiki.debian.org/Teams/DebianWiki">team</a>, <a href="https://bugs.debian.org/wiki.debian.org">bugs</a> and <a href="https://salsa.debian.org/debian/wiki.debian.org">config</a>.</li><li>Powered by <a href="https://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin</a> and <a href="https://moinmo.in/Python" title="MoinMoin is written in Python.">Python</a>, with hosting provided by <a href="https://www.man-da.de/">Metropolitan Area Network Darmstadt</a>.</li>
+</ul>
+
+
+</div>
+
+
+
+</body></html>
